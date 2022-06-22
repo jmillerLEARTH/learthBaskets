@@ -8,7 +8,21 @@ export class gameHandler
     }
     
     StartGame(){
+        
+        basketContentDistributor.InitListener();
+        
+        const event = new CustomEvent("boo");
+
+        dispatchEvent(event);
+        
+        console.log(event);
      
-        basketContentDistributor.ParseContent("test");
+        basketContentDistributor.CreateGameBaskets();
+        
+        console.log(basketContentDistributor.baskets);
+        
+        const $test = new basketContentDistributor();
+        
+        console.log($test.baskets);
     }
 }
