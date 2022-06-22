@@ -1,4 +1,6 @@
-class gameHandler
+import {basketContentDistributor} from "./basketContentDistributor.js";
+
+export class gameHandler
 {
     constructor(langHandler){
     
@@ -6,6 +8,7 @@ class gameHandler
     }
     
     StartGame(){
-        
+     
+        basketContentDistributor.ParseContent("test");
     }
 }
