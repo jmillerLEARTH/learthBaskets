@@ -1,0 +1,18 @@
+<HTML>
+<head>
+    <script type="module" >
+        import {langHandler} from 'https://jmillerlearth.github.io/indigLangSounds/indigLangSounds.js';
+        window.langHandler = new langHandler();
+    </script>
+    <script type="module" >
+        import {gameHandler} from './gameHandler.js';
+        window.gameHandler = new gameHandler(window.langHandler);
+    </script>
+</head>
+ 
+<body style="background-color:F6FFE4">
+    <div id="mainContent">
+        <button onclick="gameHandler.StartGame()" style="font-size: 60px">Test!</button>
+    </div>
+</body>
+</HTML>
